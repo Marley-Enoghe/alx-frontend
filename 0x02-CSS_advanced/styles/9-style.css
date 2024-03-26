@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  color: inherit; /* Ensures the anchor text color remains the same as its parent */
+}
+
+a:hover {
+  text-decoration: none; /* Ensures no underline on hover */
+}
