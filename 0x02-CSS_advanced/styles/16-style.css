@@ -1,0 +1,11 @@
+/* Styles for .section-tagline */
+.section-tagline {
+  /* Your existing styles for .section-tagline */
+}
+
+/* Styles for .container */
+.container {
+  width: 960px;
+  margin-left: auto; /* Automatically distribute margin on the left */
+  margin-right: auto; /* Automatically distribute margin on the right */
+}
