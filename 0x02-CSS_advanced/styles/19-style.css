@@ -1,0 +1,51 @@
+/* Create custom properties */
+:root {
+  --section-tagline-margin: 0;
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 4%;
+  --nav-item-display: inline-block;
+  --nav-item-margin: calc(3 * var(--root-element)) 0 0 0;
+  --nav-item-link-hover: var(--color-primary);
+}
+
+/* Apply custom properties to elements */
+
+/* Target the section-tagline class and set margins */
+.section-tagline {
+  margin: var(--section-tagline-margin);
+}
+
+/* Target the navbar-menu class and float it to the right */
+.navbar-menu {
+  float: right;
+}
+
+/* Target the nav class */
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Target the nav-item class within nav */
+.nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
+}
+
+/* Target the nav-link class within nav */
+.nav .nav-link {
+  display: block;
+  padding: calc(0.5 * var(--root-element)) var(--root-element);
+}
+
+/* Hover state for nav-link */
+.nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
+}

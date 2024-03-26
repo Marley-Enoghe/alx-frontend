@@ -1,0 +1,37 @@
+/* Create custom properties */
+:root {
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
+}
+
+/* Apply custom properties to elements */
+
+/* Target the class section and set padding on all 4 sides to section-padding */
+.section {
+  padding: var(--section-padding);
+}
+
+/* Target .section-header and pad all 4 sides with section-header-padding */
+.section-header {
+  padding: var(--section-header-padding);
+}
+
+/* Target the section-body class, pad all 4 sides with section-body-padding */
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+/* Target the section-footer class, pad all 4 sides with section-footer-padding and set horizontal alignment */
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
+
+/* Target the class footer and pad all 4 sides of the selected element with footer-padding */
+.footer {
+  padding: var(--footer-padding);
+}
