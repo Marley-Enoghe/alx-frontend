@@ -1,0 +1,21 @@
+/* Edit the nav-item-link-hover property */
+.nav .nav-item:hover .nav-link {
+  color: var(--color-white); /* Set the value to the color-white variable */
+}
+
+/* Target the ::before pseudo-elements of .nav-link inside .nav */
+.nav .nav-link::before {
+  content: ''; /* Set the values of these elements to empty using content */
+  position: absolute; /* Absolutely position the targeted elements */
+  top: 0; /* Set the vertical position to 0 */
+  left: 0; /* The horizontal position of the targeted elements should be 0 */
+  background-color: var(--color-white); /* Set the color of the background color of the targeted elements to the value color-white */
+  width: 0; /* The width of the targeted elements should be set to 0 */
+  height: 20% /* Set the height to 20% of the root element value */
+}
+
+/* Target the ::before pseudo-elements of .nav-link when .nav-item is hover and is inside .nav */
+.nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary); /* Set the background color of the elements to the variable color-primary */
+  width: 100%; /* Set the width of the elements to 100% */
+}
