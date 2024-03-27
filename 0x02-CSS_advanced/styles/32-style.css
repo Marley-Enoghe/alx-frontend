@@ -1,0 +1,44 @@
+/* Define custom properties */
+:root {
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Add transformations on the card work */
+
+/* Target the card-image when card-work is hover */
+.card-work:hover .card-image {
+  transform: scale(1.2); /* Apply a scale transform with a value of scale(1.2) */
+}
+
+/* Target the card-outer when card-work is hover */
+.card-work:hover .card-outer {
+  transform: scale(0.95); /* Apply a scale transform to make the elements shrink. Use scale(0.95) */
+}
+
+/* Add animations on the navigation items */
+
+/* Inside .nav .nav-link::before */
+.nav .nav-link::before {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Use the shorthand property transition */
+}
+
+/* Animate the button background */
+
+/* In the hover state of the button class */
+.button:hover {
+  transition-property: color, background-color; /* Transition effect applied to the color and background-color properties */
+  transition-duration: var(--transition-duration); /* Duration of the transition */
+}
+
+/* Add transitions on the card works */
+
+/* Inside card-work:hover .card-image */
+.card-work .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Use the shorthand property transition */
+}
+
+/* Inside .card-work .card-inner */
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Use the shorthand property transition */
+}
